@@ -1,7 +1,7 @@
 <template>
-    <div class="flex w-screen py-4">
-        <div class="w-full px-20">
-            <nav class="border border-gray-200 rounded-lg px-4 py-6 w-full flex items-center justify-center md:justify-between">
+    <div class="flex">
+        <div class="w-full">
+            <nav class="border border-gray-200 dark:border-neutral-700 rounded-lg px-4 py-6 w-full flex items-center justify-center md:justify-between dark:text-white dark:bg-neutral-900">
                 <div class="flex-none text-xl md:text-4xl">
                     A.I.M
                 </div>
