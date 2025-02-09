@@ -20,6 +20,9 @@ importers:
       nuxt:
         specifier: ^3.15.4
         version: 3.15.4(@parcel/watcher@2.5.1)(@types/node@22.13.1)(db0@0.2.3)(ioredis@5.5.0)(lightningcss@1.29.1)(magicast@0.3.5)(rollup@4.34.6)(terser@5.38.1)(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(lightningcss@1.29.1)(terser@5.38.1)(yaml@2.7.0))(yaml@2.7.0)
+      nuxt-mdi:
+        specifier: 2.1.1
+        version: 2.1.1(magicast@0.3.5)
       tailwindcss:
         specifier: ^4.0.5
         version: 4.0.5
@@ -375,6 +378,9 @@ packages:
     resolution: {integrity: sha512-llMXd39jtP0HpQLVI37Bf1m2ADlEb35GYSh1SDSLsBhR+5iCxiNGlT31yqbNtVHygHAtMy6dWFERpU2JgufhPg==}
     engines: {node: '>=18'}
     hasBin: true
+
+  '@mdi/js@7.4.47':
+    resolution: {integrity: sha512-KPnNOtm5i2pMabqZxpUz7iQf+mfrYZyKCZ8QNz85czgEt7cuHcGorWfdzUMWYA0SD+a6Hn4FmJ+YhzzzjkTZrQ==}
 
   '@netlify/functions@2.8.2':
     resolution: {integrity: sha512-DeoAQh8LuNPvBE4qsKlezjKj0PyXDryOFJfJKo3Z1qZLKzQ21sT314KQKPVjfvw6knqijj+IO+0kHXy/TJiqNA==}
@@ -2093,6 +2099,9 @@ packages:
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
 
+  nuxt-mdi@2.1.1:
+    resolution: {integrity: sha512-BkW2CQulmLSsVCJJ+NbNy/UH4Rz4vmO8bAeXVs6TgiQf+4SaDE7Q5LubzWllc/67YyQu1sjslZWrVYOXGW0KPQ==}
+
   nuxt@3.15.4:
     resolution: {integrity: sha512-hSbZO4mR0uAMJtZPNTnCfiAtgleoOu28gvJcBNU7KQHgWnNXPjlWgwMczko2O4Tmnv9zIe/CQged+2HsPwl2ZA==}
     engines: {node: ^18.20.5 || ^20.9.0 || >=22.0.0}
@@ -3450,6 +3459,8 @@ snapshots:
     transitivePeerDependencies:
       - encoding
       - supports-color
+
+  '@mdi/js@7.4.47': {}
 
   '@netlify/functions@2.8.2':
     dependencies:
@@ -5355,6 +5366,15 @@ snapshots:
   nth-check@2.1.1:
     dependencies:
       boolbase: 1.0.0
+
+  nuxt-mdi@2.1.1(magicast@0.3.5):
+    dependencies:
+      '@mdi/js': 7.4.47
+      '@nuxt/kit': 3.15.4(magicast@0.3.5)
+      defu: 6.1.4
+    transitivePeerDependencies:
+      - magicast
+      - supports-color
 
   nuxt@3.15.4(@parcel/watcher@2.5.1)(@types/node@22.13.1)(db0@0.2.3)(ioredis@5.5.0)(lightningcss@1.29.1)(magicast@0.3.5)(rollup@4.34.6)(terser@5.38.1)(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(lightningcss@1.29.1)(terser@5.38.1)(yaml@2.7.0))(yaml@2.7.0):
     dependencies:
