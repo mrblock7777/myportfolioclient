@@ -3,7 +3,7 @@
         <div class="w-full px-20">
             <nav class="border border-gray-200 rounded-lg px-4 py-6 w-full flex items-center justify-center md:justify-between">
                 <div class="flex-none text-xl md:text-4xl">
-                    Ameer Izwan
+                    A.I.M
                 </div>
                 <div class="mx-2 md:hidden">
                     <Dropdown>
