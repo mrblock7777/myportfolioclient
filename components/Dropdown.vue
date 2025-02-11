@@ -1,6 +1,6 @@
 <template>
     <div class="relative inline-block">
-        <button class="border border-gray-300 rounded-lg px-4 py-2 text-2xl" @click="show = !show">
+        <button class="border border-gray-300 rounded-lg cursor-pointer px-4 py-2 text-2xl" @click="show = !show">
             <MdiIcon icon="mdiMenu" />
         </button>
         <div v-show="show" class="absolute">

@@ -16,7 +16,7 @@ export default defineNuxtConfig({
     classSuffix: '',
     preference: 'dark',
     fallback: 'dark',
-    storageKey: 'nuxt-color-mode'
+    // storageKey: 'nuxt-color-mode'
   },
   googleFonts:{
     families:{
