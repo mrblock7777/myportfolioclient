@@ -12,13 +12,16 @@
   "dependencies": {
     "@nuxtjs/color-mode": "^3.5.2",
     "@nuxtjs/google-fonts": "^3.2.0",
-    "@tailwindcss/vite": "^4.0.5",
+    "@nuxtjs/tailwindcss": "6.13.1",
+    "autoprefixer": "^10.4.20",
     "google-fonts": "^1.0.0",
     "nuxt": "^3.15.4",
     "nuxt-mdi": "2.1.1",
-    "tailwindcss": "^4.0.5",
     "vue": "latest",
     "vue-router": "latest"
   },
-  "packageManager": "pnpm@10.2.1+sha512.398035c7bd696d0ba0b10a688ed558285329d27ea994804a52bad9167d8e3a72bcb993f9699585d3ca25779ac64949ef422757a6c31102c12ab932e5cbe5cc92"
+  "packageManager": "pnpm@10.2.1+sha512.398035c7bd696d0ba0b10a688ed558285329d27ea994804a52bad9167d8e3a72bcb993f9699585d3ca25779ac64949ef422757a6c31102c12ab932e5cbe5cc92",
+  "devDependencies": {
+    "daisyui": "^4.12.23"
+  }
 }

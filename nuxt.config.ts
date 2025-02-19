@@ -1,5 +1,3 @@
-import tailwindcss from "@tailwindcss/vite"
-
 export default defineNuxtConfig({
   app:{
     head:{
@@ -10,7 +8,8 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/google-fonts',
     '@nuxtjs/color-mode',
-    'nuxt-mdi'
+    'nuxt-mdi',
+    '@nuxtjs/tailwindcss'
   ],
   colorMode:{
     classSuffix: '',
@@ -23,11 +22,5 @@ export default defineNuxtConfig({
       Montserrat: [400, 900]
     }
   },
-  devtools: { enabled: true },
-  css: ['~/assets/css/main.css'],
-  vite:{
-    plugins:[
-      tailwindcss()
-    ]
-  }
+  devtools: { enabled: true }
 })
