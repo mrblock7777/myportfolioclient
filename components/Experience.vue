@@ -49,6 +49,9 @@ const currentShowIndex = ref(-1)
 const toggleContent = ({ show, index }: { show: boolean, index: number }) => {
     console.log(show, index)
     experiences.value[index] = {...experiences.value[index], showLongContent: show}
+    if(currentShowIndex.value == index){
+        currentShowIndex.value = -1
+    }
     if(currentShowIndex.value >= 0){
         experiences.value[currentShowIndex.value] = {...experiences.value[currentShowIndex.value], showLongContent: false}
     }
