@@ -1,7 +1,9 @@
 <template>
     <div class="my-4">
-        <span class="text-5xl">Experience</span>
-        <hr />
+        <span class="text-5xl my-2`">Experience</span>
+        <hr class="hidden lg:block"/>
+        <span class="hidden lg:block my-2">Click on the dates to show details</span>
+        <span class="block lg:hidden my-2">Tap on the dates to show details</span>
         <Timeline :items="experiences" @toggle-content="toggleContent" />
     </div>
 </template>
