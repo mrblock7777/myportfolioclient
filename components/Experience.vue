@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="my-4">
         <span class="text-5xl">Experience</span>
         <hr />
         <Timeline :items="experiences" @toggle-content="toggleContent" />
