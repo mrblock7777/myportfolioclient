@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @utility primary{
+    color: --var(--color-sky-900)
+    @variant dark{
+        color: --var(--color-yellow-200)
+    }
+} */

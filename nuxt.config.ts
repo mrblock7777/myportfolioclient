@@ -19,8 +19,12 @@ export default defineNuxtConfig({
   },
   googleFonts:{
     families:{
-      Montserrat: [400, 900]
+      Montserrat: [400, 900],
+      "Bebas Neue": [400]
     }
+  },
+  tailwindcss:{
+    cssPath: '~/assets/css/tailwind.css'
   },
   devtools: { enabled: true }
 })

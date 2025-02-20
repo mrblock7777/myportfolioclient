@@ -11,7 +11,7 @@
             </div>
             <div :class="isEven(i) ? 'timeline-end' : 'timeline-start'">
                 <img class="w-36 lg:w-96 h-auto my-6" :src="'/_nuxt/assets/' + item.logo" :alt="item.company">
-                <span v-show="item.showLongContent">
+                <span class="text-black dark:text-white" v-show="item.showLongContent">
                     {{ item.content }}
                 </span>
             </div>

@@ -2,8 +2,8 @@
     <div class="my-4">
         <span class="text-5xl my-2 dark:text-white">Experience</span>
         <hr class="hidden lg:block"/>
-        <span class="hidden lg:block my-2 dark:text-white">Click on the dates to show details</span>
-        <span class="block lg:hidden my-2 dark:text-white">Tap on the dates to show details</span>
+        <span class="hidden lg:block my-2 dark:text-white">Click on the <span :class="primaryColor">dates</span> to show details</span>
+        <span class="block lg:hidden my-2 dark:text-white">Tap on the <span :class="primaryColor">dates</span> to show details</span>
         <Timeline :items="experiences" @toggle-content="toggleContent" />
     </div>
 </template>
@@ -45,7 +45,10 @@ const experiences = ref([
 ])
 
 const currentShowIndex = ref(-1)
-
+const colorMode = useColorMode()
+const primaryColor = computed(() => {
+    return colorMode.value === 'dark' ? 'text-warning' : 'text-info'
+})
 const toggleContent = ({ show, index }: { show: boolean, index: number }) => {
     console.log(show, index)
     experiences.value[index] = {...experiences.value[index], showLongContent: show}

@@ -20,10 +20,6 @@
 <script setup lang="ts">
 const sections = ref([
     {
-        name: 'About',
-        id: 'about'
-    },
-    {
         name: 'Experience',
         id: 'experience'
     },
