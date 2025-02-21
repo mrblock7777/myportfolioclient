@@ -12,7 +12,12 @@
             <div :class="isEven(i) ? 'timeline-end' : 'timeline-start'">
                 <img class="w-36 lg:w-96 h-auto my-6" :src="'/_nuxt/assets/' + item.logo" :alt="item.company">
                 <span class="text-black dark:text-white" v-show="item.showLongContent">
-                    {{ item.content }}
+                    {{ item.content.summary }}
+                    <ul class="mx-4 my-2 marker:text-info dark:marker:text-warning">
+                        <li class="list-disc " v-for="detail in item.content.details">
+                            {{ detail }}
+                        </li>
+                    </ul>
                 </span>
             </div>
             <hr v-if="i < items.length - 1" />
@@ -20,13 +25,12 @@
     </ul>
 </template>
 <script setup lang="ts">
-import { ref } from 'vue'
 interface Props {
     items: Array<{
         date: string,
         logo: string,
         company: string,
-        content: string,
+        content: Record<string, any>,
         showLongContent: boolean
     }>
 }

@@ -4,12 +4,12 @@
         <div class="flex flex-col items-center lg:flex lg:items-start">
             <span
                 class="text-center lg:text-left text-white lg:dark:text-white lg:text-black name tracking-[0.2rem] lg:text-9xl text-8xl">
-                <span :class="primaryColor">Ameer</span> <br />
+                <span class="text-info dark:text-warning">Ameer</span> <br />
                 Izwan
             </span>
             <span
                 class="text-white lg:text-black text-center lg:text-left text-2xl lg:dark:text-white w-3/5 block font-[Montserrat]">
-                Began my journey in <span :class="primaryColor">Software Development</span> in 2020, I am passionate creating and working things with
+                Began my journey in <span class="text-info dark:text-warning">Software Development</span> in 2020, I am passionate creating and working things with
                 technology. Experienced in Web Technologies and Cloud.
             </span>
         </div>
@@ -19,11 +19,10 @@
     </div>
 </template>
 <script setup lang="ts">
-import { computed } from 'vue'
 const colorMode = useColorMode()
 
-const primaryColor = computed(() => {
-    return colorMode.value === 'dark' ? 'text-warning' : 'text-info'
+const primaryColor = (() => {
+    return colorMode.value !== 'dark' ? 'text-info' : 'text-warning'
 })
 </script>
 <style scoped>
