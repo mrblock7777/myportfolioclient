@@ -5,6 +5,11 @@ export default defineNuxtConfig({
     }
   },
   compatibilityDate: '2024-11-01',
+  runtimeConfig:{
+    public:{
+      s3AssetsBucketUrl: process.env.NUXT_S3_ASSETS_BUCKET_URL || ''
+    }
+  },
   modules: [
     '@nuxtjs/google-fonts',
     '@nuxtjs/color-mode',

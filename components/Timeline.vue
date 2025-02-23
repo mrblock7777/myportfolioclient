@@ -25,6 +25,7 @@
     </ul>
 </template>
 <script setup lang="ts">
+const config = useRuntimeConfig()
 interface Props {
     items: Array<{
         date: string,
@@ -35,7 +36,7 @@ interface Props {
     }>
 }
 const props = defineProps<Props>()
-const s3BucketURL = computed(() => process.env.S3_ASSETS_BUCKET_URL)
+const s3BucketURL = computed(() => config.public.s3AssetsBucketUrl)
 
 const isEven = (i: number) => {
     return i % 2 == 0

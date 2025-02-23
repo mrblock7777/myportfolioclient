@@ -21,7 +21,9 @@
 </template>
 <script setup lang="ts">
 const colorMode = useColorMode()
-const s3BucketURL = computed(() => process.env.S3_ASSETS_BUCKET_URL)
+const config  = useRuntimeConfig()
+const s3BucketURL = computed(() => config.public.s3AssetsBucketUrl)
+
 
 const primaryColor = (() => {
     return colorMode.value !== 'dark' ? 'text-info' : 'text-warning'
