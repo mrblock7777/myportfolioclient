@@ -10,7 +10,7 @@
                 <MdiIcon icon="mdiCheckCircle" />
             </div>
             <div :class="isEven(i) ? 'timeline-end' : 'timeline-start'">
-                <img class="w-36 lg:w-96 h-auto my-6" :src="'/_nuxt/assets/' + item.logo" :alt="item.company">
+                <img class="w-36 lg:w-96 h-auto my-6" :src="s3BucketURL + item.logo" :alt="item.company">
                 <span class="text-black dark:text-white" v-show="item.showLongContent">
                     {{ item.content.summary }}
                     <ul class="mx-4 my-2 marker:text-info dark:marker:text-warning">
@@ -35,6 +35,7 @@ interface Props {
     }>
 }
 const props = defineProps<Props>()
+const s3BucketURL = ref(process.env.S3_ASSETS_BUCKET_URL)
 
 const isEven = (i: number) => {
     return i % 2 == 0
