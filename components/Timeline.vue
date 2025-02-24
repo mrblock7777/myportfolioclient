@@ -1,5 +1,5 @@
 <template>
-    <ul class="timeline timeline-vertical justify-center lg:h-screen h-full">
+    <ul class="timeline timeline-vertical justify-center h-screen">
         <li class="flex-grow" v-for="(item, i) in props.items">
             <hr v-if="i > 0" />
             <div :class="isEven(i) ? 'timeline-start' : 'timeline-end'"
@@ -10,7 +10,7 @@
                 <MdiIcon icon="mdiCheckCircle" />
             </div>
             <div :class="isEven(i) ? 'timeline-end' : 'timeline-start'">
-                <img class="w-36 lg:w-96 h-auto my-6" :src="s3BucketURL + item.logo" :alt="item.company">
+                <img class="w-64 lg:w-96 h-auto my-6" :src="s3BucketURL + item.logo" :alt="item.company">
                 <span class="text-black dark:text-white" v-show="item.showLongContent">
                     {{ item.content.summary }}
                     <ul class="mx-4 my-2 marker:text-info dark:marker:text-warning">
