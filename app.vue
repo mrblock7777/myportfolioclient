@@ -3,6 +3,7 @@
     <Navbar/>
     <Home/>
     <Experience id="experience"/>
+    <Education id="education"/>
   </div>
 </template>
 <script setup lang="ts">
