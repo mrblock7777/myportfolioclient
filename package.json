@@ -13,6 +13,7 @@
     "@nuxtjs/color-mode": "^3.5.2",
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/tailwindcss": "6.13.1",
+    "@vueuse/core": "^12.7.0",
     "autoprefixer": "^10.4.20",
     "google-fonts": "^1.0.0",
     "nuxt": "^3.15.4",
