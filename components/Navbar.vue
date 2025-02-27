@@ -12,7 +12,7 @@
                     <AIM/>
                 </div>
                 <div class="flex gap-x-10 items-center text-xl font-[Montserrat]">
-                    <a class="hidden md:block" :href="'/#' + section.id" v-for="section in sections">{{ section.name }}</a>
+                    <a class="hidden md:block hover:text-info dark:hover:text-lime-500" :href="'/#' + section.id" v-for="section in sections">{{ section.name }}</a>
                     <DarkModeSwitch />
                 </div>
             </nav>

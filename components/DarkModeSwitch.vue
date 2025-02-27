@@ -1,5 +1,5 @@
 <template>
-    <label class="swap swap-rotate">
+    <label class="swap swap-rotate svg-preset">
         <input type="checkbox" v-model="darkMode"/>
         <svg class="swap-off h-10 w-10 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path

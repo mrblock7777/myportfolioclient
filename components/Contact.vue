@@ -11,7 +11,7 @@
             <span class="dark:text-white font-[Montserrat] text-3xl"> Find <span
                     class="text-info dark:text-lime-500">more</span> about me here!</span>
             <a v-for="contact in contacts" :href="contact.link" target="_blank"
-                class="flex items-center text-black dark:text-white">
+                class="flex items-center svg-preset text-black dark:text-white">
                 <MdiIcon class="text-7xl" :icon="contact.icon" />
                 <span>{{ contact.name }}</span>
             </a>

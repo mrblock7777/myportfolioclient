@@ -3,5 +3,11 @@
 @tailwind utilities;
 
 body *{
-    @apply transition-colors duration-700 ;
+    @apply transition-colors duration-700;
+}
+*:hover{
+    @apply transition-colors duration-500;
+}
+.svg-preset{
+    @apply text-black dark:text-white hover:text-info dark:hover:text-lime-500
 }
