@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @utility primary{
-    color: --var(--color-sky-900)
-    @variant dark{
-        color: --var(--color-yellow-200)
-    }
-} */
+body *{
+    @apply transition-colors duration-700 ;
+}
