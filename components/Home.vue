@@ -4,12 +4,12 @@
         <div class="flex flex-col items-center lg:flex lg:items-start">
             <span
                 class="text-center lg:text-left text-white lg:dark:text-white lg:text-black name tracking-[0.2rem] text-9xl">
-                <span class="text-info dark:text-warning">Ameer</span> <br />
+                <span class="text-info dark:text-lime-500">Ameer</span> <br />
                 Izwan
             </span>
             <span
                 class="text-white lg:text-black text-center lg:text-left text-2xl lg:dark:text-white w-3/5 block font-[Montserrat]">
-                Began my journey in <span class="text-info dark:text-warning">Software Development</span> in 2020, I am
+                Began my journey in <span class="text-info dark:text-lime-500">Software Development</span> in 2020, I am
                 passionate creating and working things with
                 technology. Experienced in Web Technologies and Cloud.
             </span>
@@ -26,7 +26,7 @@ const s3BucketURL = computed(() => config.public.s3AssetsBucketUrl)
 
 
 const primaryColor = (() => {
-    return colorMode.value !== 'dark' ? 'text-info' : 'text-warning'
+    return colorMode.value !== 'dark' ? 'text-info' : 'text-lime-500'
 })
 </script>
 <style scoped>

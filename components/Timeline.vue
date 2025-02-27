@@ -13,7 +13,7 @@
                 <img class="w-64 lg:w-96 h-auto my-6" :src="s3BucketURL + item.logo" :alt="item.company">
                 <span class="text-black dark:text-white" v-show="item.showLongContent">
                     {{ item.content.summary }}
-                    <ul class="mx-4 my-2 marker:text-info dark:marker:text-warning">
+                    <ul class="mx-4 my-2 marker:text-info dark:marker:text-lime-500">
                         <li class="list-disc " v-for="detail in item.content.details">
                             {{ detail }}
                         </li>
