@@ -1,6 +1,6 @@
 <template>
     <div class="my-4">
-        <span class="text-7xl my-2 text-info dark:text-lime-500 mx-4 lg:mx-0 title-text">Experience</span>
+        <span class="text-6xl lg:text-7xl my-2 text-info dark:text-lime-500 mx-4 lg:mx-0 title-text">Experience</span>
         <span class="hidden lg:block my-2 dark:text-white">Click on the <span class="text-info dark:text-lime-500">dates</span> to show
             details</span>
         <span class="block lg:hidden my-2 dark:text-white mx-4">Tap on the <span class="text-info dark:text-lime-500">dates</span> to show

@@ -1,18 +1,20 @@
 <template>
-    <div class="flex flex-wrap items-center justify-center lg:justify-start">
+    <div class="flex flex-wrap items-center justify-center lg:justify-start py-2  lg:h-screen ">
         <span
             class="text-center lg:text-left text-white lg:dark:text-white lg:text-black name w-1/2 tracking-[0.2rem] text-9xl title">
-            <span class="flex text-info dark:text-lime-500 word-break lg:text-center">
+            <span class="flex justify-center text-info dark:text-lime-500 word-break text-center">
                 Keep In Touch
             </span>
         </span>
         <div class></div>
         <div class="flex flex-col">
-            <span class="dark:text-white font-[Montserrat] text-3xl"> Find <span class="text-info dark:text-lime-500">more</span> about me here!</span>
-            <div class="flex items-center text-black dark:text-white" v-for="contact in contacts">
+            <span class="dark:text-white font-[Montserrat] text-3xl"> Find <span
+                    class="text-info dark:text-lime-500">more</span> about me here!</span>
+            <a v-for="contact in contacts" :href="contact.link" target="_blank"
+                class="flex items-center text-black dark:text-white">
                 <MdiIcon class="text-7xl" :icon="contact.icon" />
-                <a :href="contact.link" target="_blank">{{ contact.name }}</a>
-            </div>
+                <span>{{ contact.name }}</span>
+            </a>
         </div>
     </div>
 </template>
@@ -44,7 +46,8 @@ const contacts = ref([
 .title {
     font-family: 'Bebas Neue', cursive;
 }
-.word-break{
+
+.word-break {
     word-spacing: 10000px;
 }
 </style>
