@@ -7,3 +7,8 @@
     <Contact id="contact"/>
   </div>
 </template>
+<style>
+.title-text{
+    font-family: 'Bebas Neue', cursive;
+}
+</style>

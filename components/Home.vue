@@ -3,7 +3,7 @@
         :class="`bg-[url('https://assets.mrblockez.com/profile.jpg')]`" id="#">
         <div class="flex flex-col items-center lg:flex lg:items-start">
             <span
-                class="text-center lg:text-left text-white lg:dark:text-white lg:text-black name tracking-[0.2rem] text-9xl">
+                class="text-center lg:text-left text-white lg:dark:text-white lg:text-black title-text tracking-[0.2rem] text-9xl">
                 <span class="text-info dark:text-lime-500">Ameer</span> <br />
                 Izwan
             </span>
@@ -20,17 +20,7 @@
     </div>
 </template>
 <script setup lang="ts">
-const colorMode = useColorMode()
 const config  = useRuntimeConfig()
 const s3BucketURL = computed(() => config.public.s3AssetsBucketUrl)
 
-
-const primaryColor = (() => {
-    return colorMode.value !== 'dark' ? 'text-info' : 'text-lime-500'
-})
 </script>
-<style scoped>
-.name {
-    font-family: 'Bebas Neue', cursive;
-}
-</style>
