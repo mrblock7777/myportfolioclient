@@ -4,5 +4,6 @@
     <Home/>
     <Experience id="experience"/>
     <Education id="education"/>
+    <Contact id="contact"/>
   </div>
 </template>
