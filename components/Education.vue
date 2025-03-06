@@ -15,23 +15,5 @@
     </div>
 </template>
 <script setup lang="ts">
-
-const educations = ref([
-    {
-        almaMater: 'Universiti Putra Malaysia',
-        startYear: '2016',
-        endYear: '2020',
-        logo: 'upm.jpg',
-        course: 'Bachelor of Software Engineering',
-        cgpa: '3.23'
-    },
-    {
-        almaMater: 'Kolej Matrikulasi Negeri Sembilan',
-        startYear: '2015',
-        endYear: '2016',
-        logo: 'kmns.png',
-        course: 'Module 2',
-        cgpa: '3.94'
-    },
-])
+import educations from '@/data/education.json'
 </script>

@@ -1,0 +1,22 @@
+[
+    {
+       "name":"Github",
+       "icon":"mdiGithub",
+       "link":"https://github.com/mrblock7777"
+    },
+    {
+       "name":"Linkedin",
+       "icon":"mdiLinkedin",
+       "link":"https://www.linkedin.com/in/ameer-izwan-7bb76a18b"
+    },
+    {
+       "name":"Resume",
+       "icon":"mdiNote",
+       "link":"https://assets.mrblockez.com/resume-2025.pdf"
+    },
+    {
+       "name":"Email",
+       "icon":"mdiGmail",
+       "link":"mailto:mrblock7777@gmail.com"
+    }
+ ]
